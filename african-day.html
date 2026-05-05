@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RNGJ2MB8L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0RNGJ2MB8L');
+    </script>
+    <title>African Day Celebration | UDUF Africa - Celebrating African Identity, Heritage & Unity</title>
+    <meta name="description" content="Join UDUF Africa's annual African Day Celebration. A purposeful event bringing together young leaders, entrepreneurs, creatives, and community advocates to celebrate African identity, heritage, unity, and progress.">
+    <meta name="keywords" content="African Day Celebration, UDUF Africa, African heritage, youth unity, African identity, cultural celebration, pan-africanism">
+    <meta name="author" content="UDUF Africa">
+    <link rel="canonical" href="https://udufafrica.org/african-day.html">
+
+    <meta property="og:title" content="African Day Celebration | UDUF Africa">
+    <meta property="og:description" content="Annual signature event celebrating African identity, heritage, unity, and progress through empowering conversations, cultural performances, and youth showcases.">
+    <meta property="og:image" content="logo.webp">
+    <meta property="og:url" content="https://udufafrica.org/african-day.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="African Day Celebration | UDUF Africa">
+    <meta name="twitter:description" content="Celebrating African identity, heritage, and progress with purpose.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ---------- GLOBAL / RESET ---------- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fcfcfc;
+            color: #2d3436;
+            line-height: 1.6;
+            font-weight: 500;
+            padding-top: 130px;
+        }
+        :root {
+            --navy: #001338;
+            --orange: #f58220;
+            --ease: cubic-bezier(0.4, 0, 0.2, 1);
+            --brand-blue: #0056b3;
+            --fb: #1877F2;
+            --wa: #25D366;
+            --x: #000000;
+            --li: #0077B5;
+            --uduf-font: 'Anton', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        /* ===== FIXED HEADER ===== */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            z-index: 3000;
+            border-bottom: 1px solid #eee;
+        }
+
+        header {
+            position: relative;
+            height: 85px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 0;
+            left: 5%;
+            background: #fff;
+            padding: 10px 15px;
+            border-radius: 0 0 10px 10px;
+            border-top: none;
+            z-index: 1001;
+        }
+
+        .logo-container img {
+            height: 65px;
+            display: block;
+        }
+
+        /* Center logo */
+        .center-logo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1002;
+            display: block;
+        }
+        .center-logo img {
+            height: 45px;
+            width: auto;
+            display: block;
+        }
+
+        .right-section {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            z-index: 1003;
+        }
+
+        /* Desktop Navigation - White Background */
+        .desktop-nav {
+            display: block;
+        }
+        
+        .desktop-nav ul {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .desktop-nav a {
+            text-decoration: none;
+            font-size: 14px;
+            color: var(--navy);
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 0.5px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .desktop-nav a:hover {
+            color: var(--orange);
+        }
+
+        /* Mobile Navigation - Proper Styling */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 280px;
+            height: 100%;
+            background: #fff;
+          
+            transition: 0.4s;
+            padding: 80px 30px 40px;
+            z-index: 4000;
+            overflow-y: auto;
+        }
+
+        .mobile-nav.open {
+            right: 0;
+        }
+
+        .mobile-nav .nav-close {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 28px;
+            cursor: pointer;
+            color: #666;
+            transition: 0.3s;
+        }
+
+        .mobile-nav .nav-close:hover {
+            color: var(--orange);
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .mobile-nav a {
+            text-decoration: none;
+            font-size: 18px;
+            color: var(--navy);
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            display: block;
+        }
+
+        .mobile-nav a:hover {
+            color: var(--orange);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            z-index: 4001;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: #000;
+            transition: .4s var(--ease);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.0);
+            display: none;
+            z-index: 3500;
+        }
+        .overlay.active {
+            display: block;
+        }
+
+        /* Mobile responsive */
+        @media(max-width:1024px) {
+            .desktop-nav { 
+                display: none; 
+            }
+            .hamburger { 
+                display: flex; 
+            }
+            .center-logo img {
+                height: 40px;
+            }
+            .logo-container img {
+                height: 60px;
+            }
+            .logo-container {
+                padding: 8px 12px;
+            }
+        }
+
+        @media(max-width:768px) {
+            .center-logo img {
+                height: 35px;
+            }
+            .logo-container {
+                left: 3%;
+                padding: 8px 12px;
+            }
+            .logo-container img {
+                height: 55px;
+            }
+        }
+
+        @media(max-width:576px) {
+            .center-logo img {
+                height: 30px;
+            }
+            .logo-container {
+                left: 2%;
+                padding: 6px 10px;
+            }
+            .logo-container img {
+                height: 50px;
+            }
+            header {
+                height: 75px;
+            }
+            body {
+                padding-top: 120px;
+            }
+        }
+
+        @media(max-width:380px) {
+            .center-logo img {
+                height: 25px;
+            }
+            .logo-container img {
+                height: 45px;
+            }
+        }
+
+        /* ===== FOCUS AREAS ===== */
+        .focus-areas {
+            display: flex;
+            gap: 24px;
+            overflow-x: auto;
+            padding: 15px 5%;
+            background: #fff;
+            scrollbar-width: none;
+            border-bottom: 1px solid #eee;
+            font-family: 'Anton', sans-serif;
+            justify-content: center;
+        }
+        .focus-areas::-webkit-scrollbar { display: none; }
+        .focus-areas a {
+            white-space: nowrap;
+            text-decoration: none;
+            font-size: 14px;
+            color: #636e72;
+            transition: color 0.3s;
+        }
+        .focus-areas a:hover { 
+            color: var(--brand-blue); 
+        }
+        .focus-areas a.active {
+            color: var(--brand-blue);
+            border-bottom: 3px solid var(--orange);
+            padding-bottom: 5px;
+        }
+
+        /* ===== HERO & ARTICLE ===== */
+        .hero {
+            padding: 40px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: clamp(38px, 6vw, 52px);
+            color: var(--brand-blue);
+            margin-bottom: 24px;
+            line-height: 1.1;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .hero-img {
+            width: 100%;
+            max-height: 480px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 32px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        .article-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .article-content h3 {
+            font-family: 'Anton', sans-serif;
+            font-size: 26px;
+            color: var(--brand-blue);
+            margin: 32px 0 16px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            font-weight: 400;
+            border-bottom: 3px solid var(--orange);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .article-content p {
+            font-size: 17px;
+            color: #444;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        .article-content ul {
+            margin: 0 0 24px 24px;
+            color: #444;
+            list-style: none;
+        }
+
+        .article-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            font-weight: 500;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .article-content li::before {
+            content: "✓";
+            color: var(--orange);
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .highlight-box {
+            background: #f8f9ff;
+            border-left: 5px solid var(--orange);
+            padding: 25px 30px;
+            border-radius: 0 12px 12px 0;
+            margin: 40px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-style: italic;
+        }
+
+        /* ===== EVENTS GRID ===== */
+        .events {
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .events h2 {
+            grid-column: 1 / -1;
+            font-family: 'Anton', sans-serif;
+            font-size: 36px;
+            color: var(--brand-blue);
+            margin-bottom: 20px;
+            border-left: 4px solid #f58220;
+            padding-left: 15px;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .event-item {
+            display: flex;
+            gap: 16px;
+            padding: 16px;
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid #f0f0f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .event-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 6px;
+            flex-shrink: 0;
+            background: #e0e0e0;
+        }
+
+        .event-category {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 800;
+            color: #f58220;
+            margin-bottom: 4px;
+        }
+
+        .event-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #2d3436;
+            line-height: 1.3;
+        }
+
+        .event-meta {
+            font-size: 12px;
+            font-weight: 600;
+            color: #b2bec3;
+            margin-bottom: 6px;
+        }
+
+        .event-desc {
+            font-size: 13px;
+            color: #636e72;
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--brand-blue);
+            text-decoration: none;
+            transition: gap 0.3s;
+        }
+
+        .read-more:hover {
+            gap: 8px;
+            color: var(--orange);
+        }
+
+        /* ===== FOOTER (Slightly Smaller) ===== */
+        .footer {
+            background: #1e2fb8;
+            color: #f5f7ff;
+            padding: 50px 5% 35px;
+            position: relative;
+            z-index: 10;
+        }
+        .footer a {
+            color: #e6ebff;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+        .footer-grid {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr 1.5fr;
+            gap: 35px;
+        }
+        .footer-logo {
+            width: 140px;
+            margin-bottom: 15px;
+            background: transparent;
+        }
+        .footer-desc {
+            line-height: 1.5;
+            font-size: 14px;
+            opacity: .95;
+        }
+        .footer h4 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #ffffff;
+            font-family: 'Anton', sans-serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        .contact-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .contact-row img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            margin-top: 2px;
+            filter: brightness(0) invert(1);
+        }
+        .contact-row span, .contact-row a {
+            color: #e6ebff;
+        }
+        .footer-social {
+            text-align: center;
+            margin-top: 35px;
+        }
+        .footer-social a {
+            display: inline-block;
+            margin: 0 8px;
+            transition: transform 0.2s ease;
+        }
+        .footer-social a:hover {
+            transform: translateY(-3px);
+        }
+        .footer-social img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            transition: 0.2s;
+        }
+        .footer-copy {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 13px;
+            opacity: .85;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 25px;
+        }
+        .software a {
+            text-align: center;
+            display: block;
+            font-size: 11px;
+            opacity: 0.7;
+            margin-top: 12px;
+            color: #e6ebff;
+        }
+        .footer-animate {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: transform .6s ease-out, opacity .6s ease-out;
+        }
+        .footer-animate.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== SLIDE-UP ===== */
+        .slide-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+        }
+        .slide-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 900px) {
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+            .events { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== FIXED HEADER ===== -->
+<div class="fixed-header">
+    <header>
+        <!-- Left logo -->
+        <div class="logo-container">
+            <img src="logos.webp" alt="UDUF Africa Logo" loading="lazy">
+        </div>
+
+        <!-- Center logo -->
+        <div class="center-logo">
+            <img src="logo-2.webp" alt="UDUF Africa center logo" loading="lazy">
+        </div>
+
+        <div class="right-section">
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="https://school.udufafrica.org/">Courses</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="ebooks.html">Free E-books</a></li>
+                    <li><a href="testimonial.html">Testimonials</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="nav-close" id="closeMenu">✕</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="https://school.udufafrica.org/">Courses</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="ebooks.html">Free E-books</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+        </ul>
+    </div>
+    
+    <!-- ===== FOCUS AREAS ===== -->
+    <div class="focus-areas slide-up">
+        <a href="bootcamp.html">Bootcamp</a>
+        <a href="under45-ceos.html">Under 45 CEOs</a>
+        <a href="african-day.html" class="active">African Day Celebration</a>
+        <a href="international-youth-day.html">International Youth Day</a>
+    </div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<!-- ===== HERO + AFRICAN DAY CONTENT ===== -->
+<section class="hero slide-up">
+    <h1>African Day Celebration — UDUF Africa</h1>
+    <img src="ADC2025-1.webp" alt="African Day Celebration participants celebrating African heritage" class="hero-img" loading="lazy">
+    <div class="article-content">
+        <p>The African Day Celebration is an annual signature event hosted by UDUF Africa (Ultimate Destiny Uplifters Foundation) that brings together young leaders, entrepreneurs, creatives, innovators, and community advocates from across the continent to celebrate African identity, heritage, unity, and progress.</p>
+        
+        <p>Unlike a festival that only entertains, this celebration is purposeful — it honors the diversity and collective potential of African youth while inspiring action toward social and economic development.</p>
+        
+        <p>At its core, the African Day Celebration acknowledges Africa's progress, reflects on the journey toward sustainable development, and creates a platform where young Africans can:</p>
+        
+        <ul>
+            <li>Showcase cultural creativity and innovation</li>
+            <li>Engage in dialogues on leadership and community impact</li>
+            <li>Connect with peers, mentors, and changemakers</li>
+            <li>Celebrate shared heritage and future possibilities</li>
+        </ul>
+        
+        <p>The event features empowering conversations, cultural performances, youth showcases, thought-leadership panels, awards, and networking opportunities. By combining culture with purpose, the African Day Celebration fosters unity, builds confidence, and encourages a generation of young Africans to take pride in who they are and what they can achieve — together.</p>
+        
+        <div class="highlight-box">
+            <p>At UDUF Africa, African Day Celebration is both tribute and action: it celebrates the heritage that unites us and motivates the leadership and enterprise that will transform our continent.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== AFRICAN DAY CELEBRATION EVENTS ===== -->
+<section class="events slide-up">
+    <h2>Our African Day Celebration Events</h2>
+
+    <!-- African Day 2025 -->
+    <div class="event-item">
+        <img src="ADC2025-1.webp" alt="African Day Celebration 2025" loading="lazy">
+        <div>
+            <div class="event-category">African Day Celebration</div>
+            <div class="event-title">African Day Celebration 2025</div>
+            <div class="event-meta">2025</div>
+            <div class="event-desc">Celebrating African identity, heritage, and progress with purpose.</div>
+            <a href="africa-day-2025.html" class="read-more">Read More <span>→</span></a>
+        </div>
+    </div>
+
+    <!-- African Day 2024 -->
+    <div class="event-item">
+        <img src="ADC2025-4.webp" alt="African Day Celebration 2024" loading="lazy">
+        <div>
+            <div class="event-category">African Day Celebration</div>
+            <div class="event-title">African Day Celebration 2024</div>
+            <div class="event-meta">2024</div>
+            <div class="event-desc">Cultural performances, youth showcases, and thought-leadership panels.</div>
+            <a href="africa-day-2024.html" class="read-more">Read More <span>→</span></a>
+        </div>
+    </div>
+
+    <!-- African Day 2023 -->
+    <div class="event-item">
+        <img src="ADC2025-2.webp" alt="African Day Celebration 2023" loading="lazy">
+        <div>
+            <div class="event-category">African Day Celebration</div>
+            <div class="event-title">African Day Celebration 2023</div>
+            <div class="event-meta">2023</div>
+            <div class="event-desc">Honoring diversity and collective potential of African youth.</div>
+            <a href="africa-day-2023.html" class="read-more">Read More <span>→</span></a>
+        </div>
+    </div>
+    
+    <!-- African Day 2022 -->
+    <div class="event-item">
+        <img src="ADC2025-3.webp" alt="African Day Celebration 2022" loading="lazy">
+        <div>
+            <div class="event-category">African Day Celebration</div>
+            <div class="event-title">African Day Celebration 2022</div>
+            <div class="event-meta">2022</div>
+            <div class="event-desc">Celebrating African heritage and inspiring action toward development.</div>
+            <a href="africa-day-2022.html" class="read-more">Read More <span>→</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div class="footer-animate">
+            <a href="#">
+                <img src="logo.webp" alt="UDUF Africa footer logo" class="footer-logo" loading="lazy">
+            </a>
+            <p class="footer-desc">
+                UDUF Africa develops purpose-driven young leaders and entrepreneurs through capacity building,
+                enterprise support, and transformational programs.
+            </p>
+        </div>
+
+        <div class="footer-animate">
+            <h4>FEATURES</h4>
+            <a href="about-us.html">About Us</a><br>
+            <a href="programs.html">Programs</a><br>
+            <a href="volunteerism">Become a Volunteer</a><br>
+            <a href="testimonial.html">Testimonials</a>
+        </div>
+
+        <div class="footer-animate">
+            <h4>QUICK LINKS</h4>
+            <a href="ebooks.html">Free E-books</a><br>
+            <a href="blog.html">Blog</a><br>
+            <a href="https://school.udufafrica.org/">Academy</a><br>
+            <a href="privacy-policy.html">Privacy Policy</a><br>
+             <a href="contact-us.html">Contact Us</a><br>
+            <a href="faq.html">FAQs</a>
+
+            <h4 style="margin-top:15px;">Contact Us</h4>
+
+            <div class="contact-row">
+                <img src="location.webp" alt="Location icon" loading="lazy">
+                <span>Onitsha Business School, 19A Regina Nwankwu Avenue, GRA, Onitsha</span>
+            </div>
+
+            <div class="contact-row">
+                <img src="phone.webp" alt="Phone icon" loading="lazy">
+                <a href="tel:07061507103">0706 150 7103</a>
+            </div>
+
+            <div class="contact-row">
+                <img src="mail.webp" alt="Email icon" loading="lazy">
+                <a href="mailto:udufafrica@gmail.com">udufafrica@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-social footer-animate">
+        <a href="https://www.facebook.com/udufafrica" aria-label="Facebook">
+            <img src="facebook.webp" alt="Facebook" loading="lazy">
+        </a>
+        <a href="https://x.com/udufafrica" aria-label="X (Twitter)">
+            <img src="twitter.webp" alt="Twitter" loading="lazy">
+        </a>
+        <a href="https://www.instagram.com/uduf_official?igsh=enMyajVzdWtsYjM2" aria-label="Instagram">
+            <img src="instagram.webp" alt="instagram" loading="lazy">
+        </a>
+    </div>
+
+    <div class="footer-copy footer-animate">
+        © <span id="year"></span> UDUF Africa. All rights reserved.
+    </div>
+    <div class="software agency">
+        <a href="vintechdigitalservices.com">Built by Vintech Digital Services</a>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu functionality
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeMenu = document.getElementById('closeMenu');
+    const overlay = document.getElementById('overlay');
+    
+    function openMenu() {
+        hamburger.classList.add('active');
+        mobileNav.classList.add('open');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMenuFunc() {
+        hamburger.classList.remove('active');
+        mobileNav.classList.remove('open');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    hamburger.addEventListener('click', openMenu);
+    closeMenu.addEventListener('click', closeMenuFunc);
+    overlay.addEventListener('click', closeMenuFunc);
+    
+    // Close menu when clicking on a link
+    const navLinks = mobileNav.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeMenuFunc);
+    });
+    
+    // Close menu when window is resized above mobile breakpoint
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1024) {
+            closeMenuFunc();
+        }
+    });
+    
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Footer animation
+    const footerObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => { 
+            if (entry.isIntersecting) entry.target.classList.add('show'); 
+        });
+    }, { threshold: 0.15 });
+    
+    document.querySelectorAll('.footer-animate').forEach(el => footerObserver.observe(el));
+    
+    // Slide-up on load
+    window.addEventListener('load', () => {
+        document.querySelectorAll('.slide-up').forEach((el, i) => {
+            setTimeout(() => el.classList.add('show'), 100 * (i + 1));
+        });
+    });
+</script>
+</body>
+</html>

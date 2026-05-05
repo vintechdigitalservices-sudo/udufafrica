@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RNGJ2MB8L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0RNGJ2MB8L');
+    </script>
+    
+    <!-- PRIMARY SEO META TAGS -->
+    <title>Bootcamp | UDUF Africa - Transformative Leadership & Entrepreneurship Training</title>
+    <meta name="description" content="Join UDUF Africa's intensive leadership and entrepreneurship bootcamp. Two days of immersive training with expert facilitators to equip young Africans with skills, mindset, and strategies for success.">
+    <meta name="keywords" content="UDUF Africa bootcamp, leadership training Nigeria, entrepreneurship bootcamp, youth empowerment Africa, business skills training, leadership development, entrepreneurial success">
+    <meta name="author" content="UDUF Africa">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://udufafrica.org/bootcamp.html">
+
+    <!-- OPEN GRAPH META TAGS -->
+    <meta property="og:title" content="Bootcamp | UDUF Africa - Transformative Leadership & Entrepreneurship Training">
+    <meta property="og:description" content="Intensive, purpose-driven leadership and entrepreneurship training designed to equip young Africans with the skills, mindset, and practical strategies needed to thrive.">
+    <meta property="og:image" content="https://udufafrica.org/bootcamp.webp">
+    <meta property="og:url" content="https://udufafrica.org/bootcamp.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UDUF Africa">
+
+    <!-- TWITTER CARD META TAGS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bootcamp | UDUF Africa - Transformative Leadership & Entrepreneurship Training">
+    <meta name="twitter:description" content="Transformative leadership and entrepreneurship training for young Africans.">
+    <meta name="twitter:image" content="https://udufafrica.org/bootcamp.webp">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ---------- GLOBAL / RESET ---------- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fcfcfc;
+            color: #2d3436;
+            line-height: 1.6;
+            font-weight: 500;
+            padding-top: 130px;
+        }
+        :root {
+            --fb: #1877F2;
+            --wa: #25D366;
+            --x: #000000;
+            --li: #0077B5;
+            --ease: cubic-bezier(0.4, 0, 0.2, 1);
+            --navy: #001338;
+            --orange: #f58220;
+            --blue: #0056b3;
+            --uduf-font: 'Anton', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        /* ===== FIXED HEADER ===== */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            z-index: 3000;
+            border-bottom: 1px solid #eee;
+        }
+
+        header {
+            position: relative;
+            height: 85px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 0;
+            left: 5%;
+            background: #fff;
+            padding: 10px 15px;
+            border-radius: 0 0 10px 10px;
+            border-top: none;
+            z-index: 3001;
+        }
+
+        .logo-container img {
+            height: 65px;
+            display: block;
+        }
+
+        /* Center logo */
+        .center-logo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3002;
+            display: block;
+        }
+        .center-logo img {
+            height: 45px;
+            width: auto;
+            display: block;
+        }
+
+        .right-section {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            z-index: 3003;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 14px;
+            color: var(--navy);
+            font-family: var(--uduf-font);
+            letter-spacing: 0.5px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            color: var(--orange);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            z-index: 4000;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: #000;
+            transition: .4s var(--ease);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 3500;
+        }
+        .overlay.active {
+            display: block;
+        }
+
+        /* Mobile Drawer Navigation */
+        .nav-drawer {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 280px;
+            height: 100%;
+            background: #fff;
+            box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+            transition: 0.4s;
+            padding: 40px 30px;
+            z-index: 4000;
+        }
+        .nav-drawer.open {
+            right: 0;
+        }
+        .nav-close {
+            text-align: right;
+            font-size: 28px;
+            cursor: pointer;
+            margin-bottom: 40px;
+            color: #666;
+        }
+        .nav-close:hover {
+            color: var(--orange);
+        }
+        .nav-drawer ul {
+            list-style: none;
+        }
+        .nav-drawer li {
+            margin-bottom: 20px;
+        }
+        .nav-drawer a {
+            text-decoration: none;
+            font-size: 18px;
+            color: var(--blue);
+            font-family: var(--uduf-font);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .nav-drawer a:hover {
+            color: var(--orange);
+        }
+
+        /* Mobile responsive adjustments */
+        @media(max-width:1024px) {
+            nav ul { 
+                display: none; 
+            }
+            .hamburger { 
+                display: flex; 
+            }
+            .center-logo img {
+                height: 40px;
+            }
+            .logo-container img {
+                height: 60px;
+            }
+            .logo-container {
+                padding: 8px 12px;
+            }
+        }
+
+        @media(max-width:768px) {
+            .center-logo img {
+                height: 35px;
+            }
+            .logo-container {
+                left: 3%;
+                padding: 8px 12px;
+            }
+            .logo-container img {
+                height: 55px;
+            }
+        }
+
+        @media(max-width:576px) {
+            .center-logo img {
+                height: 30px;
+            }
+            .logo-container {
+                left: 2%;
+                padding: 6px 10px;
+            }
+            .logo-container img {
+                height: 50px;
+            }
+            header {
+                height: 75px;
+            }
+            body {
+                padding-top: 120px;
+            }
+        }
+
+        @media(max-width:380px) {
+            .center-logo img {
+                height: 25px;
+            }
+            .logo-container img {
+                height: 45px;
+            }
+        }
+
+        /* ===== FOCUS AREAS ===== */
+        .focus-areas {
+            display: flex;
+            gap: 24px;
+            overflow-x: auto;
+            padding: 15px 5%;
+            background: #fff;
+            scrollbar-width: none;
+            border-bottom: 1px solid #eee;
+            font-family: var(--uduf-font);
+            justify-content: center;
+        }
+        .focus-areas::-webkit-scrollbar { display: none; }
+        .focus-areas a {
+            white-space: nowrap;
+            text-decoration: none;
+            font-size: 14px;
+            color: #636e72;
+            transition: color 0.3s;
+        }
+        .focus-areas a:hover { 
+            color: var(--blue); 
+        }
+        .focus-areas a.active {
+            color: var(--blue);
+            border-bottom: 3px solid var(--orange);
+            padding-bottom: 5px;
+        }
+
+        /* ===== HERO & ARTICLE ===== */
+        .hero {
+            padding: 40px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: clamp(38px, 6vw, 52px);
+            color: var(--blue);
+            margin-bottom: 24px;
+            line-height: 1.1;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .hero-img {
+            width: 100%;
+            max-height: 480px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 32px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        .article-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .article-content h3 {
+            font-family: 'Anton', sans-serif;
+            font-size: 26px;
+            color: var(--blue);
+            margin: 32px 0 16px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            font-weight: 400;
+            border-bottom: 3px solid var(--orange);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .article-content p {
+            font-size: 17px;
+            color: #444;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        .article-content ul {
+            margin: 0 0 24px 24px;
+            color: #444;
+            list-style: none;
+        }
+
+        .article-content li {
+            margin-bottom: 8px;
+            font-size: 17px;
+            font-weight: 500;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .article-content li::before {
+            content: "✓";
+            color: var(--orange);
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* ===== SHARE SECTION ===== */
+        .share-container { 
+            margin: 30px 0; 
+            padding: 15px 0; 
+            border-top: 1px solid #eee; 
+            border-bottom: 1px solid #eee; 
+            display: flex; 
+            align-items: center; 
+            gap: 20px; 
+            flex-wrap: wrap; 
+        }
+        .share-label { 
+            font-weight: bold; 
+            color: #666; 
+            font-size: 0.9rem; 
+        }
+        .share-icons { 
+            display: flex; 
+            gap: 12px; 
+        }
+        .share-icons a { 
+            display: inline-flex; 
+            width: 42px; 
+            height: 42px; 
+            border-radius: 50%; 
+            align-items: center; 
+            justify-content: center; 
+            transition: 0.3s var(--ease); 
+            color: white; 
+            text-decoration: none; 
+            font-size: 1.2rem; 
+        }
+        .share-icons a:hover { 
+            transform: translateY(-3px); 
+            filter: brightness(1.1); 
+        }
+        .sc-fb { background: var(--fb); }
+        .sc-wa { background: var(--wa); }
+        .sc-x  { background: var(--x); }
+        .sc-li { background: var(--li); }
+
+        /* ===== EVENTS GRID ===== */
+        .events {
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .events h2 {
+            grid-column: 1 / -1;
+            font-family: 'Anton', sans-serif;
+            font-size: 36px;
+            color: var(--blue);
+            margin-bottom: 20px;
+            border-left: 4px solid #f58220;
+            padding-left: 15px;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .event-item {
+            display: flex;
+            gap: 16px;
+            padding: 16px;
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid #f0f0f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .event-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 6px;
+            flex-shrink: 0;
+            background: #e0e0e0;
+        }
+
+        .event-category {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 800;
+            color: #f58220;
+            margin-bottom: 4px;
+        }
+
+        .event-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #2d3436;
+            line-height: 1.3;
+        }
+
+        .event-meta {
+            font-size: 12px;
+            font-weight: 600;
+            color: #b2bec3;
+            margin-bottom: 6px;
+        }
+
+        .event-desc {
+            font-size: 13px;
+            color: #636e72;
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--blue);
+            text-decoration: none;
+            transition: gap 0.3s;
+        }
+
+        .read-more:hover {
+            gap: 8px;
+            color: var(--orange);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer { 
+            background: #1e2fb8; 
+            color: #f5f7ff; 
+            padding: 50px 5% 35px; 
+            position: relative;
+            z-index: 10;
+            clear: both;
+        }
+        .footer a { 
+            color: #e6ebff; 
+            text-decoration: none; 
+            display: inline-block; 
+            margin: 5px 0; 
+        }
+        .footer a:hover { 
+            text-decoration: underline; 
+            color: white;
+        }
+        .footer-grid { 
+            max-width: 1200px; 
+            margin: auto; 
+            display: grid; 
+            grid-template-columns: 1.2fr 1fr 1fr 1.5fr; 
+            gap: 35px; 
+        }
+        .footer-logo { 
+            width: 140px; 
+            margin-bottom: 15px; 
+            background: transparent;
+        }
+        .footer-desc { 
+            line-height: 1.5; 
+            font-size: 14px; 
+            opacity: .95; 
+        }
+        .footer h4 { 
+            margin-bottom: 15px; 
+            font-size: 18px; 
+            color: #ffffff; 
+            font-family: var(--uduf-font); 
+            font-weight: 400; 
+            letter-spacing: 1px;
+        }
+        .contact-row { 
+            display: flex; 
+            align-items: flex-start; 
+            gap: 10px; 
+            margin: 10px 0; 
+            font-size: 14px; 
+        }
+        .contact-row img { 
+            width: 18px; 
+            height: 18px; 
+            object-fit: contain; 
+            margin-top: 2px; 
+            filter: brightness(0) invert(1);
+        }
+        .contact-row span, .contact-row a { 
+            color: #e6ebff; 
+        }
+        .footer-social { 
+            text-align: center; 
+            margin-top: 35px; 
+        }
+        .footer-social a { 
+            display: inline-block; 
+            margin: 0 8px; 
+            transition: transform 0.2s ease;
+        }
+        .footer-social a:hover { 
+            transform: translateY(-3px); 
+        }
+        .footer-social img { 
+            width: 28px; 
+            height: 28px; 
+            object-fit: contain; 
+            filter: brightness(0) invert(1);
+            transition: 0.2s; 
+        }
+        .footer-copy { 
+            text-align: center; 
+            margin-top: 25px; 
+            font-size: 13px; 
+            opacity: .85; 
+            border-top: 1px solid rgba(255,255,255,0.1); 
+            padding-top: 25px; 
+        }
+        .software a {
+            text-align: center;
+            display: block;
+            font-size: 11px;
+            opacity: 0.7;
+            margin-top: 12px;
+            color: #e6ebff;
+        }
+        .footer-animate { 
+            opacity: 0; 
+            transform: translateY(24px); 
+            transition: transform .6s ease-out, opacity .6s ease-out; 
+        }
+        .footer-animate.show { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+
+        /* ===== SLIDE-UP ===== */
+        .slide-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+        }
+        .slide-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 900px) {
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+            .events { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== FIXED HEADER ===== -->
+<div class="fixed-header">
+    <header>
+        <!-- Left logo -->
+        <div class="logo-container">
+            <a href="index.html"><img src="logos.webp" alt="UDUF Africa Logo" loading="lazy"></a>
+        </div>
+
+        <!-- Center logo -->
+        <div class="center-logo">
+            <a href="index.html"><img src="logo-2.webp" alt="UDUF Africa center logo" loading="lazy"></a>
+        </div>
+
+        <div class="right-section">
+            <!-- Desktop Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="https://school.udufafrica.org/">Courses</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="ebooks.html">Free E-books</a></li>
+                    <li><a href="testimonial.html">Testimonials</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ===== FOCUS AREAS ===== -->
+    <div class="focus-areas slide-up">
+        <a href="bootcamp.html" class="active">Bootcamp</a>
+        <a href="under45-ceos.html">Under 45 CEOs</a>
+        <a href="african-day.html">African Day Celebration</a>
+        <a href="international-youth-day.html">International Youth Day</a>
+    </div>
+</div>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay"></div>
+
+<!-- Mobile Drawer Navigation -->
+<div class="nav-drawer" id="navDrawer">
+    <div class="nav-close" id="closeMenu">✕</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About</a></li>
+        <li><a href="https://school.udufafrica.org/">Courses</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="ebooks.html">Free E-books</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+    </ul>
+</div>
+
+<!-- ===== HERO + BOOTCAMP CONTENT ===== -->
+<section class="hero slide-up">
+    <h1>Bootcamp — UDUF Africa</h1>
+    
+    <!-- Share buttons -->
+    <div class="share-container">
+        <span class="share-label">SHARE THIS PAGE</span>
+        <div class="share-icons">
+            <a id="share-facebook" target="_blank" class="sc-fb"><i class="fab fa-facebook-f"></i></a>
+            <a id="share-whatsapp" target="_blank" class="sc-wa"><i class="fab fa-whatsapp"></i></a>
+            <a id="share-twitter" target="_blank" class="sc-x"><i class="fab fa-x-twitter"></i></a>
+            <a id="share-linkedin" target="_blank" class="sc-li"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <img src="bootcamp.webp" alt="UDUF Africa Bootcamp participants in training session" class="hero-img" loading="lazy">
+    
+    <div class="article-content">
+        <p>Bootcamp at UDUF Africa (Ultimate Destiny Uplifters Foundation) is an intensive, purpose-driven leadership and entrepreneurship training designed to equip young Africans with the skills, mindset, and practical strategies needed to thrive in business and life. It is not just a gathering — it is a transformational experience where emerging leaders and entrepreneurs deepen their knowledge and sharpen their capacity for impact.</p>
+        
+        <h3>The Bootcamp Experience</h3>
+        <p>Across two days of immersive training, participants engage with expert facilitators, business professionals, and thought leaders who share actionable insights on leadership, strategy, financial management, resilience, and sustainable business practices. The sessions focus on real challenges faced by young entrepreneurs — from scaling ventures to navigating economic uncertainty — and provide practical tools for overcoming them.</p>
+        
+        <h3>What Participants Gain</h3>
+        <ul>
+            <li>Strong leadership and strategic thinking skills</li>
+            <li>Business management and growth insights</li>
+            <li>Enhanced problem-solving and decision-making ability</li>
+            <li>Opportunities to build meaningful networks</li>
+            <li>Practical strategies for entrepreneurial success</li>
+        </ul>
+        
+        <h3>Impact & Outcomes</h3>
+        <p>Bootcamp graduates leave equipped with knowledge, confidence, and a renewed commitment to ethical enterprise and community transformation. The Bootcamp fosters a growth culture that helps young Africans become more resilient, purpose-driven leaders in business and society.</p>
+    </div>
+</section>
+
+<!-- ===== BOOTCAMP EVENTS ===== -->
+<section class="events slide-up">
+    <h2>Our Bootcamp Events</h2>
+
+    <!-- Bootcamp 2026 -->
+    <div class="event-item">
+        <img src="B2026-1.webp" alt="Bootcamp 2026" loading="lazy">
+        <div>
+            <div class="event-category">Leadership Bootcamp</div>
+            <div class="event-title">Bootcamp 2026</div>
+            <div class="event-meta">2026</div>
+            <div class="event-desc">Next generation leadership and entrepreneurship training.</div>
+            <a href="bootcamp-2026.html" class="read-more">Read More <span>→</span></a>
+        </div>
+    </div>
+
+    <!-- Bootcamp 2025 -->
+    <div class="event-item">
+        <img src="B2025-1.webp" alt="Bootcamp 2025" loading="lazy">
+        <div>
+            <div class="event-category">Leadership Bootcamp</div>
+            <div class="event-title">Bootcamp 2025</div>
+            <div class="event-meta">2025</div>
+            <div class="event-desc">Intensive leadership and entrepreneurship training for young African leaders.</div>
+            <a href="bootcamp-2025.html" class="read-more">Read More <span>→</span></a>
+        </div>
+    </div>
+
+    <!-- Bootcamp 2024 -->
+    <div class="event-item">
+        <img src="B2025-2.webp" alt="Bootcamp 2024" loading="lazy">
+        <div>
+            <div class="event-category">Leadership Bootcamp</div>
+            <div class="event-title">Bootcamp 2024</div>
+            <div class="event-meta">2024</div>
+            <div class="event-desc">Transformative training focused on resilience and business growth.</div>
+            <a href="bootcamp-2024.html" class="read-more">Read More <span>→</span></a>
+        </div>
+    </div>
+
+    <!-- Bootcamp 2023 -->
+    <div class="event-item">
+        <img src="" alt="Bootcamp 2023" loading="lazy">
+        <div>
+            <div class="event-category">Leadership Bootcamp</div>
+            <div class="event-title">Bootcamp 2023</div>
+            <div class="event-meta">2023</div>
+            <div class="event-desc">Building strategic thinking and entrepreneurial capacity.</div>
+            <a href="bootcamp-2023.html" class="read-more">Read More <span>→</span></a>
+        </div>
+    </div>
+
+    <!-- Bootcamp 2022 -->
+    <div class="event-item">
+        <img src="B2025-4.webp" alt="Bootcamp 2022" loading="lazy">
+        <div>
+            <div class="event-category">Leadership Bootcamp</div>
+            <div class="event-title">Bootcamp 2022</div>
+            <div class="event-meta">2022</div>
+            <div class="event-desc">Foundational training for emerging leaders and entrepreneurs.</div>
+            <a href="bootcamp-2022.html" class="read-more">Read More <span>→</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div class="footer-animate">
+            <a href="#">
+                <img src="logo.webp" alt="UDUF Africa footer logo" class="footer-logo" loading="lazy">
+            </a>
+            <p class="footer-desc">
+                UDUF Africa develops purpose-driven young leaders and entrepreneurs through capacity building,
+                enterprise support, and transformational programs.
+            </p>
+        </div>
+
+        <div class="footer-animate">
+            <h4>FEATURES</h4>
+            <a href="about-us.html">About Us</a><br>
+            <a href="programs.html">Programs</a><br>
+            <a href="volunteerism">Become a Volunteer</a><br>
+            <a href="testimonial.html">Testimonials</a>
+        </div>
+
+        <div class="footer-animate">
+            <h4>QUICK LINKS</h4>
+            <a href="ebooks.html">Free E-books</a><br>
+            <a href="blog.html">Blog</a><br>
+            <a href="https://school.udufafrica.org/">Academy</a><br>
+            <a href="privacy-policy.html">Privacy Policy</a><br>
+             <a href="contact-us.html">Contact Us</a><br>
+            <a href="faq.html">FAQs</a>
+
+            <h4 style="margin-top:15px;">Contact Us</h4>
+
+            <div class="contact-row">
+                <img src="location.webp" alt="Location icon" loading="lazy">
+                <span>Onitsha Business School, 19A Regina Nwankwu Avenue, GRA, Onitsha</span>
+            </div>
+
+            <div class="contact-row">
+                <img src="phone.webp" alt="Phone icon" loading="lazy">
+                <a href="tel:07061507103">0706 150 7103</a>
+            </div>
+
+            <div class="contact-row">
+                <img src="mail.webp" alt="Email icon" loading="lazy">
+                <a href="mailto:udufafrica@gmail.com">udufafrica@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-social footer-animate">
+        <a href="https://www.facebook.com/udufafrica" aria-label="Facebook">
+            <img src="facebook.webp" alt="Facebook" loading="lazy">
+        </a>
+        <a href="https://x.com/udufafrica" aria-label="X (Twitter)">
+            <img src="twitter.webp" alt="Twitter" loading="lazy">
+        </a>
+        <a href="https://www.instagram.com/uduf_official?igsh=enMyajVzdWtsYjM2" aria-label="Instagram">
+            <img src="instagram.webp" alt="instagram" loading="lazy">
+        </a>
+    </div>
+
+    <div class="footer-copy footer-animate">
+        © <span id="year"></span> UDUF Africa. All rights reserved.
+    </div>
+    <div class="software agency">
+        <a href="vintechdigitalservices.com">Built by Vintech Digital Services</a>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu functionality
+    const hamburger = document.getElementById('hamburger');
+    const navDrawer = document.getElementById('navDrawer');
+    const closeMenu = document.getElementById('closeMenu');
+    const overlay = document.getElementById('overlay');
+    
+    function openMenu() {
+        hamburger.classList.add('active');
+        navDrawer.classList.add('open');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenuFunc() {
+        hamburger.classList.remove('active');
+        navDrawer.classList.remove('open');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openMenu);
+    closeMenu.addEventListener('click', closeMenuFunc);
+    overlay.addEventListener('click', closeMenuFunc);
+
+    // Close menu when clicking on a link
+    const navLinks = navDrawer.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeMenuFunc);
+    });
+
+    // Close menu when window is resized above mobile breakpoint
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1024) {
+            closeMenuFunc();
+        }
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Footer animation
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => { 
+            if (entry.isIntersecting) entry.target.classList.add('show'); 
+        });
+    }, { threshold: 0.15 });
+    
+    document.querySelectorAll('.footer-animate').forEach(el => observer.observe(el));
+
+    // Slide-up on load
+    window.addEventListener('load', () => {
+        document.querySelectorAll('.slide-up').forEach((el, i) => {
+            setTimeout(() => el.classList.add('show'), 100 * (i + 1));
+        });
+        document.querySelectorAll('.footer-animate').forEach((el, idx) => {
+            setTimeout(() => el.classList.add('show'), 100 + (idx * 80));
+        });
+    });
+
+    // Share buttons
+    const shareUrl = encodeURIComponent(window.location.href);
+    const shareTitle = encodeURIComponent("Bootcamp at UDUF Africa | Leadership & Entrepreneurship Training");
+    document.getElementById("share-facebook").href = `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`;
+    document.getElementById("share-whatsapp").href = `https://wa.me/?text=${shareTitle}%20-%20${shareUrl}`;
+    document.getElementById("share-twitter").href = `https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}`;
+    document.getElementById("share-linkedin").href = `https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`;
+</script>
+
+</body>
+</html>
