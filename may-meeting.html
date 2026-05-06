@@ -27,11 +27,12 @@
 <meta property="og:url" content="https://udufafrica.org/may-meeting.html">
 <meta property="og:title" content="May Business Meeting & Mentorship Session 2026 | Turning Knowledge into Wealth | UDUF Africa">
 <meta property="og:description" content="Join UDUF Africa's May Business Meeting & Mentorship Session. Theme: Turning Knowledge into Wealth - Practical Strategies for SMEs and Young Entrepreneurs.">
-<meta property="og:image" content="https://udufafrica.org/event2.jpg">
-<meta property="og:image:secure_url" content="https://udufafrica.org/event2.jpg">
+<!-- FIX: Hero image "may.jpg" is now the primary share image for WhatsApp and all social platforms -->
+<meta property="og:image" content="https://udufafrica.org/may.jpg">
+<meta property="og:image:secure_url" content="https://udufafrica.org/may.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="UDUF Africa May Business Meeting 2026 - Turning Knowledge into Wealth">
+<meta property="og:image:alt" content="UDUF Africa May Business Meeting 2026 - Hero banner featuring Turning Knowledge into Wealth theme">
 <meta property="og:site_name" content="UDUF Africa">
 <meta property="og:published_time" content="2026-05-09">
 <meta property="og:locale" content="en_NG">
@@ -41,9 +42,10 @@
 <meta name="twitter:url" content="https://udufafrica.org/may-meeting.html">
 <meta name="twitter:title" content="May Business Meeting & Mentorship Session 2026 | UDUF Africa">
 <meta name="twitter:description" content="Turning Knowledge into Wealth: Practical Strategies for SMEs and Young Entrepreneurs.">
-<meta name="twitter:image" content="https://udufafrica.org/event2.jpg">
+<!-- FIX: Hero image "may.jpg" used for Twitter card as well -->
+<meta name="twitter:image" content="https://udufafrica.org/may.jpg">
 
-<!-- WhatsApp Specific Meta Tags -->
+<!-- WhatsApp Specific Meta Tags (ensuring high quality image) -->
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -1243,7 +1245,7 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDropd
 monthContent.addEventListener('click', (e) => e.stopPropagation());
 monthContent.querySelectorAll('a').forEach(link => link.addEventListener('click', closeDropdown));
 
-// Share buttons
+// Share buttons (using the corrected Open Graph image "may.jpg" as the default preview)
 const shareUrl = encodeURIComponent(window.location.href);
 const shareTitle = encodeURIComponent("UDUF Africa May Business Meeting & Mentorship Session 2026");
 document.getElementById("share-facebook").href = `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`;
