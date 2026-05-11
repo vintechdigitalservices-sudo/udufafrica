@@ -1,41 +1,46 @@
+cat > sitemap.xml << 'EOF'
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://udufafrica.org/index.html</loc><priority>1.0</priority></url>
-  <url><loc>https://udufafrica.org/about-us.html</loc><priority>0.8</priority></url>
-  <url><loc>https://udufafrica.org/blog.html</loc><priority>0.9</priority></url>
-  <url><loc>https://udufafrica.org/programs.html</loc><priority>0.8</priority></url>
-  <url><loc>https://udufafrica.org/volunteerism.html</loc><priority>0.8</priority></url>
-  <url><loc>https://udufafrica.org/contact-us.html</loc><priority>0.7</priority></url>
-  <url><loc>https://udufafrica.org/ebooks.html</loc><priority>0.7</priority></url>
-  <url><loc>https://udufafrica.org/faq.html</loc><priority>0.6</priority></url>
-  <url><loc>https://udufafrica.org/privacy-policy.html</loc><priority>0.3</priority></url>
-  <url><loc>https://udufafrica.org/testimonials.html</loc><priority>0.6</priority></url>
-
-  <url><loc>https://udufafrica.org/leadership.html</loc><priority>0.8</priority></url>
-  <url><loc>https://udufafrica.org/entrepreneurship.html</loc><priority>0.8</priority></url>
-  <url><loc>https://udufafrica.org/community-service.html</loc><priority>0.8</priority></url>
-
-  <url><loc>https://udufafrica.org/servant-leadership-africa.html</loc><priority>0.7</priority></url>
-  <url><loc>https://udufafrica.org/start-business-no-capital.html</loc><priority>0.7</priority></url>
-  <url><loc>https://udufafrica.org/how-to-stay-consistent.html</loc><priority>0.7</priority></url>
-  <url><loc>https://udufafrica.org/lead-without-title.html</loc><priority>0.7</priority></url>
-  <url><loc>https://udufafrica.org/why-volunteering-matters.html</loc><priority>0.7</priority></url>
-
-  <url><loc>https://udufafrica.org/bootcamp.html</loc><priority>0.7</priority></url>
-  <url><loc>https://udufafrica.org/bootcamp-2026.html</loc><priority>0.6</priority></url>
-  <url><loc>https://udufafrica.org/bootcamp-2025.html</loc><priority>0.5</priority></url>
-  <url><loc>https://udufafrica.org/bootcamp-2024.html</loc><priority>0.5</priority></url>
-  <url><loc>https://udufafrica.org/bootcamp-2023.html</loc><priority>0.5</priority></url>
-  <url><loc>https://udufafrica.org/bootcamp-2022.html</loc><priority>0.5</priority></url>
-  <url><loc>https://udufafrica.org/africa-day-2025.html</loc><priority>0.5</priority></url>
-  <url><loc>https://udufafrica.org/africa-day-2024.html</loc><priority>0.5</priority></url>
-  <url><loc>https://udufafrica.org/africa-day-2023.html</loc><priority>0.5</priority></url>
-  <url><loc>https://udufafrica.org/africa-day-2022.html</loc><priority>0.5</priority></url>
-  <url><loc>https://udufafrica.org/international-youth-day-2024.html</loc><priority>0.5</priority></url>
-  <url><loc>https://udufafrica.org/under45-ceos.html</loc><priority>0.7</priority></url>
-  
-  <url><loc>https://udufafrica.org/february-meeting.html</loc><priority>0.4</priority></url>
-  <url><loc>https://udufafrica.org/march-meeting.html</loc><priority>0.4</priority></url>
-  <url><loc>https://udufafrica.org/april-meeting.html</loc><priority>0.4</priority></url>
-  <url><loc>https://udufafrica.org/may-meeting.html</loc><priority>0.4</priority></url>
+  <url><loc>https://udufafrica.org/</loc><priority>1.00</priority></url>
+  <url><loc>https://udufafrica.org/index.html</loc><priority>1.00</priority></url>
+  <url><loc>https://udufafrica.org/about-us.html</loc><priority>0.90</priority></url>
+  <url><loc>https://udufafrica.org/africa-day-2022.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/africa-day-2023.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/africa-day-2024.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/africa-day-2025.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/african-day.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/april-meeting.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/blog.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/bootcamp.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/bootcamp-2022.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/Bootcamp-2023.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/bootcamp-2024.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/bootcamp-2025.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/bootcamp-2026.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/community-service.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/contact-us.html</loc><priority>0.90</priority></url>
+  <url><loc>https://udufafrica.org/ebooks.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/entrepreneurship.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/faq.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/february-meeting.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/how-to-stay-consistent.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/international-youth-day.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/international-youth-day-2024.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/lead-without-title.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/leadership.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/march-meeting.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/may-meeting.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/privacy-policy.html</loc><priority>0.50</priority></url>
+  <url><loc>https://udufafrica.org/programs.html</loc><priority>0.90</priority></url>
+  <url><loc>https://udufafrica.org/servant-leadership-africa.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/start-business-no-capital.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/testimonials.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/uduf-2022.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/uduf-2023.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/uduf-2024.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/uduf-2025.html</loc><priority>0.70</priority></url>
+  <url><loc>https://udufafrica.org/under45-ceos.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/volunteerism.html</loc><priority>0.80</priority></url>
+  <url><loc>https://udufafrica.org/why-volunteering-matters.html</loc><priority>0.70</priority></url>
 </urlset>
+EOF
