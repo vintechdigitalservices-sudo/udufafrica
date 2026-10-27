@@ -505,30 +505,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const volunteers = [
   // === ORIGINAL MEMBERS (Preserved) ===
-  {name:'Eke Chukwuemelie', brand:'CEO, WeCare Nursing Services', img:'chukwuemelie.jpg'},
-  {name:'Ezuma Smart Chinedu', brand:'Founder & President', img:'ezuma.webp'},
-  {name:'Mary Nancy Edeh-okoye', brand:'CEO, Made-Nice Fashion', img:'mary.webp'},
-  {name:'Christopher Uchenna', brand:'CEO, GEEP CHRIS BRIDGE', img:'christopher.webp'},
-  {name:'Amarachi Nina', brand:'Chairperson Planning Comitee', img:'nina.webp'},
-  {name:'Gloria Ezeudo Odinaka', brand:'Member', img:'gloria.webp'},
-  {name:'Amarachi Okpara Onwuamaegbu', brand:'CEO, House of Maramuna', img:'a.okpala.webp'},
-  {name:'Achukwu Onyinye Jane', brand:'CEO, Ranky Jane NIG LTD', img:'jane.webp'},
-  {name:'Paul Steve', brand:'Member', img:'paul.webp'},
-  {name:'Precious Leonard Ani', brand:'Fashion designer', img:'review2.webp'},
-  {name:'Mgbadigha Miracle Chisom', brand:'Entrepreneur', img:'miracle.webp'},
-  {name:'DB Joshua Ikechukwu', brand:'CEO, Dream-Care Global', img:'joshua.webp'},
-  {name:'Charles Osobie', brand:'Business Development Manager (FMCG)', img:'osobie-charles.webp'},
-  {name:'Ezeudo Udochukwu Henry', brand:'Bookpreneur', img:'henry.webp'},
-  {name:'Onyia Amara Rebecca', brand:'Online marketer', img:'onyia.webp'},
+  {name:'Eke Chukwuemelie', brand:'CEO, WeCare Nursing Services', img:'assets/images/chukwuemelie.jpg'},
+  {name:'Ezuma Smart Chinedu', brand:'Founder & President', img:'assets/images/ezuma.webp'},
+  {name:'Mary Nancy Edeh-okoye', brand:'CEO, Made-Nice Fashion', img:'assets/images/mary.webp'},
+  {name:'Christopher Uchenna', brand:'CEO, GEEP CHRIS BRIDGE', img:'assets/images/christopher.webp'},
+  {name:'Amarachi Nina', brand:'Chairperson Planning Comitee', img:'assets/images/nina.webp'},
+  {name:'Gloria Ezeudo Odinaka', brand:'Member', img:'assets/images/gloria.webp'},
+  {name:'Amarachi Okpara Onwuamaegbu', brand:'CEO, House of Maramuna', img:'assets/images/a.okpala.webp'},
+  {name:'Achukwu Onyinye Jane', brand:'CEO, Ranky Jane NIG LTD', img:'assets/images/jane.webp'},
+  {name:'Paul Steve', brand:'Member', img:'assets/images/paul.webp'},
+  {name:'Precious Leonard Ani', brand:'Fashion designer', img:'assets/images/review2.webp'},
+  {name:'Mgbadigha Miracle Chisom', brand:'Entrepreneur', img:'assets/images/miracle.webp'},
+  {name:'DB Joshua Ikechukwu', brand:'CEO, Dream-Care Global', img:'assets/images/joshua.webp'},
+  {name:'Charles Osobie', brand:'Business Development Manager (FMCG)', img:'assets/images/osobie-charles.webp'},
+  {name:'Ezeudo Udochukwu Henry', brand:'Bookpreneur', img:'assets/images/henry.webp'},
+  {name:'Onyia Amara Rebecca', brand:'Online marketer', img:'assets/images/onyia.webp'},
   {name:'Nwankwo Chioma Vivian', brand:'Entrepreneur', img:'vivian.webp'},
-  {name:'Ohagwu ikenna valentine', brand:'Engineer. MTN fiber x', img:'valentine.webp'},
-  {name:'Augustus Obiozo', brand:'Member, Board of Directors', img:'augustus.jpg'},
-  {name:'Edwin Obioma Ngwuoke', brand:'Vice President 1', img:'edwin.jpg'},
-  {name:'Owan Erico Itesi', brand:'Director of Media', img:'owan.jpg'},
-  {name:'Onuigbo Chidubem Godwin', brand:'Assistant Director of Assets', img:'chidubem.jpg'},
-  {name:'Chira Chinyere Christiana', brand:'Director of Finance', img:'chira.jpg'},
-  {name:'Joshua C. Iheanacho', brand:'Vice President 2', img:'joshua_iheanacho.jpg'},
-  {name:'Chukwuemeke Chimaobi Emmanuel', brand:'CEO Vintech Digital Services', img:'anchor.jpg'}
+  {name:'Ohagwu ikenna valentine', brand:'Engineer. MTN fiber x', img:'assets/images/valentine.webp'},
+  {name:'Augustus Obiozo', brand:'Member, Board of Directors', img:'assets/images/augustus.jpg'},
+  {name:'Edwin Obioma Ngwuoke', brand:'Vice President 1', img:'assets/images/Edwin.jpg'},
+  {name:'Owan Erico Itesi', brand:'Director of Media', img:'assets/images/owan.jpg'},
+  {name:'Onuigbo Chidubem Godwin', brand:'Assistant Director of Assets', img:'assets/images/chidubem.jpg'},
+  {name:'Chira Chinyere Christiana', brand:'Director of Finance', img:'assets/images/chira.jpg'},
+  {name:'Joshua C. Iheanacho', brand:'Vice President 2', img:'assets/images/joshua_iheanacho.jpg'},
+  {name:'Chukwuemeke Chimaobi Emmanuel', brand:'CEO Vintech Digital Services', img:'assets/images/anchor.jpg'}
   
 ];
   const radius = 240; 
@@ -978,7 +978,7 @@ function createDesktopTestimonialCard(testimonial) {
   
   card.innerHTML = `
     <div class="testimonial-logo">
-      <img src="logo.webp" alt="UDUF Africa Logo" loading="lazy">
+      <img src="assets/images/logo.webp" alt="UDUF Africa Logo" loading="lazy">
     </div>
     <p class="testimonial-text">${testimonial.text}</p>
     <div class="testimonial-author">
@@ -1104,21 +1104,21 @@ function getFallbackTestimonials() {
       name: "Christopher Uchenna",
       title: "CEO – GEEPCHRIS BRIDGE",
       text: "I love UDUF Africa.",
-      image: "review1.webp",
+      image: "assets/images/review1.webp",
       phone: "07061507103"
     },
     {
       name: "Precious Leonard Ani",
       title: "Fashion Designer",
       text: "UDUF AFRICA is one organization that selflessly builds and equips individuals to the best they can ever be. Personally, this is a platform from where I got to learn life skills, entrepreneurship and leadership.",
-      image: "review2.webp",
+      image: "assets/images/review2.webp",
       phone: "09061749840"
     },
     {
       name: "Elijah Nwachukwu",
       title: "Software Developer",
       text: "After the teachings and insights shared, I knew UDUF Africa was where I needed to be. The networking was great.",
-      image: "review3.webp",
+      image: "assets/images/review3.webp",
       phone: "09165201092"
     },
     {
@@ -1132,14 +1132,14 @@ function getFallbackTestimonials() {
       name: "Mgbadigha Miracle Chisom",
       title: "Entrepreneur",
       text: "I bless the day I joined uduf Africa, they brought out a part in me that I never knew existed, the growth part both in business and other areas of life.",
-      image: "miracle.webp",
+      image: "assets/images/miracle.webp",
       phone: "08160357692"
     },
     {
       name: "DB Joshua Ikechukwu",
       title: "CEO, Dream-Care Global",
       text: "Being part of UDUF Africa has helped me build myself leadership skills and self confidence for the past 4 years now and still counting.",
-      image: "joshua.webp",
+      image: "assets/images/joshua.webp",
       phone: "08142861390"
     }
   ];
